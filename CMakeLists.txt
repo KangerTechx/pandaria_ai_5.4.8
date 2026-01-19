@@ -25,7 +25,7 @@ if (UNIX)
 endif()
 
 # Set projectname (must be done AFTER setting configurationtypes)
-project(Pandaria_5.4.8)
+project(Pandaria_ai_5.4.8)
 
 # CMake policies (can not be handled elsewhere)
 cmake_minimum_required(VERSION 2.8.9)
@@ -101,3 +101,8 @@ add_subdirectory(dep)
 
 # add core sources
 add_subdirectory(src)
+
+if (USE_MODULES)
+	# add core modules
+	add_subdirectory(modules)
+endif()

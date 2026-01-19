@@ -99,6 +99,7 @@ LogsDir = "Logs"
 LoginDatabaseInfo     = "127.0.0.1;3306;root;root;auth"
 WorldDatabaseInfo     = "127.0.0.1;3306;root;root;world"
 CharacterDatabaseInfo = "127.0.0.1;3306;root;root;characters"
+PlayerbotsDatabaseInfo = "127.0.0.1;3306;root;root;mop_playerbots"
 
 #
 #    LoginDatabase.WorkerThreads
@@ -114,6 +115,7 @@ CharacterDatabaseInfo = "127.0.0.1;3306;root;root;characters"
 LoginDatabase.WorkerThreads     = 1
 WorldDatabase.WorkerThreads     = 1
 CharacterDatabase.WorkerThreads = 1
+PlayerbotsDatabase.WorkerThreads = 1
 
 #
 #    LoginDatabase.SynchThreads
@@ -127,6 +129,7 @@ CharacterDatabase.WorkerThreads = 1
 LoginDatabase.SynchThreads     = 1
 WorldDatabase.SynchThreads     = 1
 CharacterDatabase.SynchThreads = 2
+PlayerbotsDatabase.SynchThreads = 1
 
 #
 #    MaxPingTime
@@ -3339,6 +3342,7 @@ Logger.root=5,Console Server
 Logger.server=3,Console Server
 Logger.commands.gm=3,Console GM
 Logger.sql.sql=5,Console DBErrors
+Logger.playerbots=3,Console Server
 
 #Logger.achievement=3,Console Server
 #Logger.auctionHouse=3,Console Server
